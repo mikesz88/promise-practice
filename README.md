@@ -7,30 +7,12 @@
 - Run ```npm i``` to install dependencies and packages.
 - Start solving the exercises, following the "HOW IT WORKS" section.
 
-## PROMISES LEARNING PLAN
-
-- Promise Constructor 
-* * e1: Fulfill with onFulfilled callback in .then()
-* * e2: Reject with onRejected callback in .then()
-- Promises are always asynchromous
-* * e3: make sure the promise returns a value on the next event loop
-* Promise after promise
-* e4: Multiple resolve handlers exercise
-* * Values and Promises
-* e5: Resolve handlers as values and promises are wrapped into promises.
-* * Catching and finalizing the promise
-* e6: Promice.catch(), Promise.finally()
-* e7: Promise single status
-* e8: Promise Shortcuts: Promise.resolve(), Promise.reject()
-* e9: Promise error catching by the next error handler
-* e10: Promise.all, Promise.any, Promise.allSettled, Promise.race
-* e11: json-server and fetching in NodeJS
 
 ## HOW IT WORKS
 - The repo has the "exercises" folder with 11 exercise files (e1.js, e2.js, ... etc). Each file includes the task description, data imported if required, and a placeholders for your code.
 - Descriptions for some exercises are located in /exercise-info/ folder. Make sure to read those!
 - Open e1.js file and start writing the Promise constructor code beneath the "Your code goes here..." placeholder to achieve the goals described.
-- 🔴 **async/await syntax is not allowed! resolve/reject Promise handlers only**
+- 🔴 **async/await syntax is not allowed unless specified**
 - Once you are done, run the test command ```npm run test-1``` in the command line, where "1" is the current exercise number. This will start the test environment and show the passed and failed tests for the current code you have written.
 - If the test results have all tests passed (no red comments), consider it to be finished successfully, then switch to the next exercise file.
 - If any of the tests fails, refactor the code and run the test command after you've fixed the function. 
