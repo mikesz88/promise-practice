@@ -6,19 +6,19 @@
 
 /**
  * @task
- * Create a function `iterate` that prints the first argument 
+ * Create a function `iterate` that prints the first function argument 
  * (an integer) to it and then returns that argument + 1
  * The function must be exported
  */
 
-export function iterate() {
+export function iterate(arg) {
   // Your code goes here...
-
+  
 }
 
 /**
  * @task
- * Create a function `alwaysThrows` that throws an `Error` with text `"OH NOES"`
+ * Create a function `alwaysThrows` that throws an `Error` with a message of "OH NOES"
  * The function must be exported
  */
 
@@ -29,13 +29,16 @@ export function alwaysThrows() {
 
 /**
  * @task
- * Create a function `onReject` that logs the argument value in the console
+ * Create a function `onReject` that 
+ * * Takes an argument that can be either error object or a string value
+ * * Logs the error object message property value in the console if the argument is an object
+ * * Logs the argument value in the console in any other case
  * The function must be exported
  */
 
 export function onReject() {
   // Your code goes here...
-  
+
 }
 
 /**
@@ -49,8 +52,17 @@ export function onReject() {
  * If everything was done correctly the promise will:
  * * log (1, 2, 3, 4, 5)
  * * throw an error that will be handled by the catch() block and log the error message
+ * Example: export const promise = Promise.resolve(<Your_resolved_code>)
+ *                                  .then(<First_async_iterate_call>)
+ *                                  .then(<Second_async_iterate_call>)
+ *                                  .then(<Nth_async_iterate_call>)
+ *                                  .then(<alwaysThrows_async_call>)
+ *                                  .then(N+1_sync_iterate_call)
+ *                                  .catch(<Your_error_catching_code>)
+ * !!! HINT: It is OK to have a lot of .then() code blocks.
  */
 
+// Your code goes here...
 export const promise;
 
 
