@@ -1,6 +1,6 @@
 /**
  * PROMISE catch() && finally
- * Please, make sure to read the "05 Promise-catch-&-finally.md" file in exercise-info folder before you start!
+ * Please, make sure to read the "06-Promise-catch-&-finally.md" file in exercise-info folder before you start!
  * Create a handlePromise() function handlePromise that follows the requirements:
  * * Has a name of 'handlePromise'
  * * Returns a promise set with a constructor, that:
@@ -13,8 +13,6 @@
  *              .finally(<Your code>)
  *          }
  */
-
-// Your code goes here
 
 export const handlePromise = () => {
   // Your code goes here...

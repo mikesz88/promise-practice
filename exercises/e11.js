@@ -1,10 +1,10 @@
 /**
  * GET DATABASE LOGINS LIST
- * Make sure to read the /exercise-info/fetching-in-Node-JS.md file before you start
- * Make sure to read the /exercise-info/json-server.md file before you start
- * @prerequisites Please, follow the list of step you need to make:
+ * Make sure to read the /exercise-info/11-fetching-in-Node-JS.md file before you start
+ * Make sure to read the /exercise-info/11-json-server.md file before you start
+ * @prerequisites Please, follow the list of steps you need to make:
  * * Execute`npx json-server --watch data/db.json` to start the db watcher
- * * the user jason will start responding at 'http://localhost:3000/users/'
+ * * the USERS json will start responding at 'http://localhost:3000/users/'
  */
 
 /**
@@ -26,7 +26,6 @@ export const usersUrl = 'http://localhost:3000/users/';
  * Example: const getLoginList = (data) => {<Your code>}
 */
 
-// Your code goes here ...
 const getLoginList = () => {
   // Your code goes here...
 

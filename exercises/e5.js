@@ -1,6 +1,6 @@
 /**
  * VALUES AND PROMISES
- * Please, make sure to read the "04 Values-and-promises.md" file form exercise-info folder
+ * Please, make sure to read the "05-Values-and-promises.md" file form exercise-info folder
  * @task
  * Create a function `attachTitle` which follows the requirements:
  * * prepends `'DR. '` to its first argument and returns the result.

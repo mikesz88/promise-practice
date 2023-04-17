@@ -1,6 +1,6 @@
 # PROMISE SHORTCUTS #
 
-Promise shortcust are used more often rather than the full-syntax expressions. The shortcuts are:
+Promise shortcuts are used more often rather than the full-syntax expressions. The shortcuts are:
 
 * Promise.resolve()
 * Promise.reject()
@@ -18,7 +18,7 @@ var rejectedPromise = new Promise((res, rej) => {
 })
 ```
 
-Using the shirtcut syntax you can write the same promises with much less code:
+Using the shortcut syntax you can write the same promises with much less code:
 
 ```JS
 var resolvedPromise = Promise.resolve('resolved');

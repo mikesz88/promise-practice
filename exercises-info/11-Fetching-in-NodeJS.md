@@ -63,7 +63,7 @@ data
     console.log(data))
     return data;
   }
-  // catch and log the error if occures
+  // catch and log the error if occurs
   .catch (e => console.log(e))
 ```
 
@@ -71,7 +71,7 @@ data
 
 NodeJS does not support the fetch API by default, so whenever you use it with NodeJS it will throw an error of ``ReferenceError: fetch is not defined``.
 
-The "node-fetch" package, which is a A light-weight module that brings Fetch API to Node.js allows to import the fetch method into our NodeJS project.
+The "node-fetch" package, which is a A light-weight module that brings Fetch API to Node.js allows us to import the fetch method into our NodeJS project.
 
 To start using it you need to take 2 steps:
 

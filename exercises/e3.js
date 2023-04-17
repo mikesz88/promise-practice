@@ -1,6 +1,6 @@
 /**
  * PROMISES ARE ALWAYS ASYNCHRONOUS
- * Please, make sure to read the "02 Always-asynchronous.md" file in exercises-info folder before you start!
+ * Please, make sure to read the "03-Always-asynchronous.md" file in exercises-info folder before you start!
 */
 
 /**
@@ -9,7 +9,7 @@
  * * Has a name 'getPromise'
  * * Takes an argument of any type
  * * If the argument is a whole number
- * * * Returns a promise constructor, that resolves with a number value passed as the argument
+ * * * Returns a promise constructor that resolves with a number value passed as the argument
  * * else returns 0; 
  * * getPromise(num) function must be exported
  * Example: export const getPromise(num) => return <Your code of promise>

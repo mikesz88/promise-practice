@@ -3,7 +3,7 @@
 "json-server" package is a fake-API  generator package that can be set in 30 seconds. 
 To start using it you need to make just a couple of steps:
 
-1. Install json-server witht he following command:
+1. Install json-server with the following command:
 
 ```npm install -g json-server```
 
@@ -29,7 +29,7 @@ To start using it you need to make just a couple of steps:
 
 ```npx json-server --watch <path_to_db.json_file>```
 
-**NOTE: The path to db.json file in this exercise is "/data/db.json".**
+**NOTE: The path to db.json file in this exercise is "data/db.json".**
 
 ## Fetching data from fake endpoint
 

@@ -1,6 +1,6 @@
 /**
  * PROMISE .resolve() and .reject() methods
- * Please, make sure to read the "Promise-shortcuts.md" file in exercise-info folder before you start!
+ * Please, make sure to read the "08-Promise-shortcuts.md" file in exercise-info folder before you start!
  * In this task you need to refactor the resolved promise with a shortcut of Promise.resolve()
  * Then refactor the promise constructors with shortcuts.
 */

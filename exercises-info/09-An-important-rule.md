@@ -6,8 +6,8 @@ through the stack until it is caught by a catch block or
 hits the global context where it will be thrown.
 
 In the code below, each expression is evaluated one after the
-other.  If any expression throws an exception, **all subsequent
-expressions will not be executed** and the catch block
+other.  If any expression throws an exception, 
+**all subsequent expressions will not be executed** and the catch block
 will catch and handle it.
 
 ```js

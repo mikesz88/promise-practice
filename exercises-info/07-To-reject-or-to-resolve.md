@@ -1,6 +1,6 @@
 # What happens if we reject AND resolve a promise?
 
-The **ES2015** spec states that a promise, once fullfilled or rejected, may
+The **ES2015** spec states that a promise, once fulfilled or rejected, may
 **not** change states for the rest of its lifetime.  This is an important
 feature of promises and it is also one of the things that differentiates it
 from an `EventEmitter` (and other forms of repeatable callbacks).

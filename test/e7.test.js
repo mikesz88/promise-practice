@@ -26,7 +26,7 @@ describe('onReject function test', () => {
     expect(logSpy).toBeCalledWith('OH NOES');
   });
 
-  it('Shoule log the error message Test 2', () => {
+  it('Should log the error message Test 2', () => {
     const logSpy = vitest.spyOn(console, "log");
     onReject(new Error('REJECTED'));
     expect(logSpy).toBeCalledWith('REJECTED');
@@ -34,21 +34,21 @@ describe('onReject function test', () => {
 });
 
 describe("handlePromise", () => {
-  it("should exist", () => {
+  it("Should exist", () => {
     expect(handlePromise).toBeInstanceOf(Function);
   });
 
-  it('should return undefined if I pass in a promise that rejects', async () => {
+  it('Should return undefined if I pass in a promise that rejects', async () => {
     expect(await handlePromise(parsePromised(invalidJsonString))).toBe(undefined);
   });
 
-  it('should log the error message if I pass in a promise that rejects', async () => {
+  it('Should log the error message if I pass in a promise that rejects', async () => {
     const logSpy = vitest.spyOn(console, "log");
     await handlePromise(parsePromised(invalidJsonString));
     expect(logSpy).toBeCalledWith('Unexpected token T in JSON at position 0');
   });
 
-  it("should return a value that resolves to the resolved value of the promise I pass in", async () => {
+  it("Should return a value that resolves to the resolved value of the promise I pass in", async () => {
     expect(
       await handlePromise(
         Promise.resolve("yoyoyo, I'm jon H and I'm ready to go")

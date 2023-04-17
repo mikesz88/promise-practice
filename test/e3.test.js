@@ -15,7 +15,7 @@ describe('getPromise', () => {
     await expect(getPromise(80)).resolves.toEqual(80);
   });
 
-  it('Function returns 0 ifthe argument is not a whole number or is not a number', () => {
+  it('Function returns 0 if the argument is not a whole number or is not a number', () => {
     expect(getPromise('abc')).toEqual(0);
     expect(getPromise(9.1)).toEqual(0);
   });
