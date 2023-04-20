@@ -3,17 +3,17 @@
  * Please, make sure to read the "09 An-important-rule.md" file in exercises-info folder
  */
 
-
 /**
  * @task
- * Create a function `iterate` that prints the first function argument 
+ * Create a function `iterate` that prints the first function argument
  * (an integer) to it and then returns that argument + 1
  * The function must be exported
  */
 
 export function iterate(arg) {
   // Your code goes here...
-  
+  console.log(arg);
+  return arg + 1;
 }
 
 /**
@@ -24,21 +24,25 @@ export function iterate(arg) {
 
 export function alwaysThrows() {
   // Your code goes here...
-
+  throw Error('OH NOES');
 }
 
 /**
  * @task
- * Create a function `onReject` that 
+ * Create a function `onReject` that
  * * Takes an argument that can be either error object or a string value
  * * Logs the error object message property value in the console if the argument is an object
  * * Logs the argument value in the console in any other case
  * The function must be exported
  */
 
-export function onReject() {
+export function onReject(val) {
   // Your code goes here...
-
+  if (val instanceof Error) {
+    console.log(val.message);
+  } else {
+    console.log(val);
+  }
 }
 
 /**
@@ -63,9 +67,20 @@ export function onReject() {
  */
 
 // Your code goes here...
-export const promise;
+export const promise = Promise.resolve(iterate)
+  .then((val) => iterate(val))
+  .then((val) => iterate(val))
+  .then((val) => iterate(val))
+  .then((val) => iterate(val))
+  .then(() => alwaysThrows())
+  .then((val) => iterate(val))
+  .then((val) => iterate(val))
+  .then((val) => iterate(val))
+  .then((val) => iterate(val))
+  .then((val) => iterate(val))
+  .catch((e) => onReject(e));
 
-
+console.log(promise);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-9"

@@ -1,7 +1,7 @@
 /**
  * MULTIPLE PROMISES: .all(), .any(), .allSettled(), .race()
  * Please, make sure to read the "10 Multiple-promises.md" file in exercise-info folder before you start!
-*/
+ */
 
 const promise1 = new Promise((res) => setTimeout(res, 4000, 'RESOLVED AGAIN'));
 const promise2 = Promise.reject('Promise 2 REJECTED');
@@ -15,24 +15,25 @@ const promiseArr = [promise1, promise2, promise3, promise4];
  * when promiseArr was passed as the argument
  */
 
-export const result1 = val // Your code here
-
+export const result1 = Promise.allSettled(promiseArr).then(
+  (val) => val[1].reason
+); // Your code here
 
 /**
  * @task
  * Use a correct PROMISE shortcut that will log and return the resolved value of promise3;
  */
 
-export const result2 = val // Your code here
-
+export const result2 = Promise.allSettled(promiseArr).then(
+  (val) => val[2].value
+); // Your code here
 
 /**
  * @task
  * Use a correct PROMISE shortcut that will log and return an array of all promises statuses and values/reasons;
-*/
+ */
 
-export const result3 = val // Your code here 
-
+export const result3 = Promise.allSettled(promiseArr).then((val) => val); // Your code here
 
 /**
  * @task
@@ -41,16 +42,14 @@ export const result3 = val // Your code here
  * You can use any array methods you know.
  */
 
-let newPromiseArr; // Your code here
+let newPromiseArr = [
+  promise1,
+  new Promise((res) => setTimeout(res, 4000, 'Promise 2 REJECTED')),
+  new Promise((res) => setTimeout(res, 4000, 'Promise 3 RESOLVED')),
+  Promise.resolve('RESOLVED AGAIN'),
+];
 
-export const result4 = Promise.race(newPromiseArr)
-  .then((data) => {
-    return data;
-  })
-  .catch((err) => console.log(err));
-
-
-
+export const result4 = Promise.race(newPromiseArr).then((data) => data);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
